@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Encrypt Text</title>
+</head>
+<body>
+    <h1>Encrypt Text</h1>
+    <form method="post">
+        <label for="text">Text to encrypt:</label>
+        <input type="text" id="text" name="text" required>
+        <button type="submit">Encrypt</button>
+    </form>
+    {% if encrypted_text %}
+        <h2>Encrypted Text:</h2>
+        <p>{{ encrypted_text }}</p>
+    {% endif %}
+    <a href="/">Home</a>
+</body>
+</html>

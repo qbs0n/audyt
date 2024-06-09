@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+    <title>Protected</title>
+</head>
+<body>
+    <h1>Protected Page</h1>
+    <p>You are logged in!</p>
+    <a href="{{ url_for('encrypt') }}">Encrypt Text</a><br>
+    <a href="{{ url_for('decrypt') }}">Decrypt Text</a><br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

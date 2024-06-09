@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Decrypt Text</title>
+</head>
+<body>
+    <h1>Decrypt Text</h1>
+    <form method="post">
+        <label for="encrypted_text">Encrypted text:</label>
+        <input type="text" id="encrypted_text" name="encrypted_text" required>
+        <button type="submit">Decrypt</button>
+    </form>
+    {% if decrypted_text %}
+        <h2>Decrypted Text:</h2>
+        <p>{{ decrypted_text }}</p>
+    {% endif %}
+    <a href="/">Home</a>
+</body>
+</html>

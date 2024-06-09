@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+    <title>Setup</title>
+</head>
+<body>
+    <h1>Setup</h1>
+    <p>Setup your account for 2FA.</p>
+    <a href="{{ url_for('qrcode_route') }}">Generate QR Code</a><br>
+    <a href="{{ url_for('verify') }}">Verify Token</a><br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
